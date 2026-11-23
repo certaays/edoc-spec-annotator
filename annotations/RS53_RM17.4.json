@@ -1,0 +1,179 @@
+{
+  "doc_name": "RS53_RM17.4",
+  "pages": [
+    {
+      "image": "pages/RS53_RM17.4/page-1.png",
+      "annotations": [
+        {
+          "id": "patient_identity",
+          "box": [508, 22, 912, 118],
+          "label": "bridging data pasien",
+          "label_pos": [760, 96],
+          "anchor": "mm",
+          "font_size": 16,
+          "bg": true
+        },
+        {
+          "id": "vital_signs",
+          "box": [35, 143, 965, 236],
+          "label": "bridging TTV",
+          "label_pos": [760, 212],
+          "anchor": "mm",
+          "font_size": 18,
+          "bg": true
+        },
+        {
+          "id": "staff_nakes",
+          "box": [35, 238, 965, 377],
+          "label": "autocomplete nakes",
+          "label_pos": [495, 310],
+          "anchor": "mm",
+          "font_size": 16,
+          "bg": true
+        },
+        {
+          "id": "jaringan_eksisi",
+          "label": "text area",
+          "label_pos": [420, 408],
+          "anchor": "mm",
+          "font_size": 15
+        },
+        {
+          "id": "dikirim_pemeriksaan",
+          "box": [825, 395, 962, 430],
+          "label": "checkbox single option",
+          "label_pos": [960, 383],
+          "anchor": "rm",
+          "font_size": 11,
+          "bg": true
+        },
+        {
+          "id": "tanggal_pembedahan",
+          "label": "input tgl",
+          "label_pos": [306, 478],
+          "anchor": "mm",
+          "font_size": 13,
+          "bg": true
+        },
+        {
+          "id": "pembedahan_mulai",
+          "label": "input jam",
+          "label_pos": [590, 478],
+          "anchor": "mm",
+          "font_size": 14,
+          "bg": true
+        },
+        {
+          "id": "pembedahan_selesai",
+          "label": "input jam",
+          "label_pos": [895, 478],
+          "anchor": "mm",
+          "font_size": 14,
+          "bg": true
+        },
+        {
+          "id": "diagnosa",
+          "box": [285, 488, 965, 566],
+          "label": "bridging diagnosa + tambah data",
+          "label_pos": [625, 527],
+          "anchor": "mm",
+          "font_size": 17,
+          "bg": true
+        },
+        {
+          "id": "tindakan",
+          "box": [35, 566, 504, 760],
+          "label": "bridging tindakan",
+          "label_pos": [270, 665],
+          "anchor": "mm",
+          "font_size": 18
+        },
+        {
+          "id": "kualifikasi_sedasi",
+          "box": [504, 566, 724, 760],
+          "label": "checkbox\nsingle option",
+          "label_pos": [672, 625],
+          "anchor": "mm",
+          "font_size": 12,
+          "bg": true
+        },
+        {
+          "id": "macam_operasi",
+          "box": [724, 566, 965, 760],
+          "label": "1. checkbox\n   single option\n2. input text\n   disable enable",
+          "label_pos": [895, 650],
+          "anchor": "mm",
+          "font_size": 11,
+          "bg": true
+        },
+        {
+          "id": "jumlah_perdarahan",
+          "label": "freetext",
+          "label_pos": [165, 792],
+          "anchor": "mm",
+          "font_size": 14,
+          "bg": true
+        },
+        {
+          "id": "komplikasi",
+          "label": "freetext",
+          "label_pos": [520, 792],
+          "anchor": "mm",
+          "font_size": 14,
+          "bg": true
+        },
+        {
+          "id": "implan_kode",
+          "label": "freetext",
+          "label_pos": [895, 772],
+          "anchor": "mm",
+          "font_size": 14,
+          "bg": true
+        },
+        {
+          "id": "jenis_anestesi",
+          "box": [35, 802, 965, 840],
+          "label": "checkbox single option",
+          "label_pos": [435, 830],
+          "anchor": "mm",
+          "font_size": 13,
+          "bg": true
+        },
+        {
+          "id": "laporan_operasi",
+          "label": "text area",
+          "label_pos": [450, 864],
+          "anchor": "mm",
+          "font_size": 16
+        },
+        {
+          "id": "instruksi_pasca_operasi",
+          "label": "text area",
+          "label_pos": [450, 905],
+          "anchor": "mm",
+          "font_size": 16
+        }
+      ]
+    },
+    {
+      "image": "pages/RS53_RM17.4/page-2.png",
+      "annotations": [
+        {
+          "id": "tgl_jam_ttd",
+          "label": "input tgl dan jam",
+          "label_pos": [845, 42],
+          "anchor": "lm",
+          "font_size": 14
+        },
+        {
+          "id": "ttd_dokter_operator",
+          "box": [510, 52, 860, 162],
+          "label": "TTD QR + autocomplete nakes",
+          "label_pos": [685, 108],
+          "anchor": "mm",
+          "font_size": 15
+        }
+      ]
+    }
+  ]
+}

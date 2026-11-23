@@ -1,0 +1,41 @@
+{
+  "doc_name": "LK_HY",
+  "pages": [
+    {
+      "image": "pages/LK_HY/page-1.png",
+      "annotations": [
+        {
+          "id": "patient_identity",
+          "box": [55, 145, 920, 195],
+          "label": "bridging data pasien",
+          "label_pos": [765, 170],
+          "anchor": "lm",
+          "font_size": 16
+        },
+        {
+          "id": "kasus",
+          "label": "text area",
+          "label_pos": [420, 203],
+          "anchor": "lm",
+          "font_size": 15
+        },
+        {
+          "id": "jawaban_dpjp",
+          "label": "text area",
+          "label_pos": [420, 220],
+          "anchor": "lm",
+          "font_size": 15
+        },
+        {
+          "id": "signature",
+          "box": [660, 245, 940, 372],
+          "label": "TTD image + autocomplete nakes",
+          "label_pos": [800, 388],
+          "anchor": "mt",
+          "font_size": 15
+        }
+      ]
+    }
+  ]
+}
+
