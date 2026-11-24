@@ -39,15 +39,26 @@ Apply these standard programmer specs unless the user specifies otherwise:
 
 - **Patient Identity** (`Nama`, `No. RM`, `Tgl. Lahir`, `Jenis Kelamin`, `Alamat`, `NIK`, `No. Kartu`, `No. SEP`, `Tgl. Masuk`, `Tgl. Pulang`):
   - Group in a red rectangle → `bridging data pasien`
+- **Nomor Surat** (`Nomor Surat`, usually formatted as `.../.../...` below hospital/patient identity):
+  - Label → `bridging nomor surat`
 - **Vital Signs / TTV** (`Tanda Vital`, `Tekanan Darah`, `Nadi`, `Suhu`, `Nafas`, `RR`, `GCS`, `SPO2`, `Berat Badan`, `Tinggi Badan`, `Kondisi pasien`):
   - Group in a red rectangle → `bridging TTV`
-- **Diagnosis** (`Diagnosis`, `Diagnosa Pra Bedah`, `Diagnosa Pasca Bedah`):
-  - Label → `bridging diagnosa + tambah data` (or `bridging diagnosa` if read-only)
-- **Procedures** (`Tindakan`, `Nama / Macam Operasi / Tindakan Pembedahan`):
-  - Label → `bridging tindakan`
-- **Staff / Healthcare Workers (`Nakes`)**:
-  - Name/role field (`Dokter Operator`, `Asisten`, `Perawat`, `Dokter Anestesi`, `Petugas`) → `autocomplete nakes`
-  - Signature block (`TTD`, `Tanda tangan`, `Petugas Rujuk`, `Petugas Penerima`) → `TTD QR + autocomplete nakes`
+- **List Bridging (Lab, Radiologi, Tindakan, Fisioterapi, Operasi)**:
+  - `Laboratorium` → `bridging list laboratorium`
+  - `Radiologi` → `bridging list radiologi`
+  - `Tindakan` (`Tindakan`, `Nama / Macam Operasi / Tindakan Pembedahan`) → `bridging list tindakan`
+  - `Fisioterapi` → `bridging list fisioterapi`
+  - `Operasi` → `bridging list operasi`
+- **Diagnosis**:
+  - Specific diagnosis types (`diagnosa keperawatan`, `diagnosa gizi`, `diagnosa sekunder`, `diagnosa primer`, `diagnosa banding`, `diagnosa masuk`, `diagnosa pra ops`, `diagnosa pasca ops`) → `bridging <specific type>` (e.g., `bridging diagnosa keperawatan`, `bridging diagnosa pra ops`)
+  - Any other / general diagnosis field → `bridging list diagnosa`
+- **Resep / Obat**:
+  - `Resep`, `Obat` → `diagnosa resep/prescription`
+- **Staff / Healthcare Workers (`Dokter` & `Nakes`)**:
+  - `Dokter DPJP` / `Petugas DPJP` / `Dokter Penanggung Jawab` → `bridging dokter dpjp`
+  - `Dokter` (other doctor fields, e.g., `Dokter Operator`, `Dokter Anestesi`) → `autocomplete dokter`
+  - All other `Nakes` / `Petugas` (`Perawat`, `Asisten`, `Petugas`, `Bidan`, etc.) → `autocomplete nakes`
+  - Signature block (`TTD`, `Tanda tangan`, `Petugas Rujuk`, `Petugas Penerima`) → `TTD QR + autocomplete nakes` (or `autocomplete dokter` when specifically for a doctor)
 - **Dates & Times**:
   - Date only (`Tanggal Pembedahan`) → `input tgl`
   - Time only (`Pembedahan mulai`, `Pembedahan Selesai`) → `input jam`
